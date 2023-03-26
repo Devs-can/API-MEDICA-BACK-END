@@ -23,15 +23,6 @@ public class Medico {
     private Sala sala;
     private Endereco endereco;
 
-    @Enumerated(EnumType.STRING)
-    private Especialidade especialidade;
-
-    private SalaConsultorioMedico salaConsultorioMedico;
-
-    private Sala sala;
-
-    @Embedded
-    private Endereco endereco;
 
     public Medico(DadosCadastroMedico dados) {
         this.nome = dados.nome();
@@ -42,18 +33,5 @@ public class Medico {
         this.salaConsultorioMedico = dados.salaConsultorioMedico();
         this.endereco = new Endereco(dados.endereco());
     }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
-        Medico medico = (Medico) o;
-        return id != null && Objects.equals(id, medico.id);
-    }
-
-    @Override
-    public int hashCode() {
-        return getClass().hashCode();
-    }
 }
-//JPA
+
