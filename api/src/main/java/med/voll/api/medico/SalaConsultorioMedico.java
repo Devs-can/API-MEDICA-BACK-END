@@ -1,9 +1,9 @@
 package med.voll.api.medico;
 
 public enum  SalaConsultorioMedico{
-    RECEPÇÃO,
+    RECEPCAO,
     CONSULTA,
     EXAME,
-    FARMÁCIA,
-    LABORATÓRIO
+    FARMACIA,
+    LABORATORIO
 }
