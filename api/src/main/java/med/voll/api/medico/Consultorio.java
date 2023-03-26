@@ -1,6 +1,6 @@
 package med.voll.api.medico;
 
-public enum  SalaConsultorioMedico{
+public enum Consultorio {
     RECEPCAO,
     CONSULTA,
     EXAME,
