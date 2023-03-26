@@ -1,8 +1,13 @@
 package med.voll.api.medico;
 
 public enum Especialidade {
-    ORTOPEDIA,
     CARDIOLOGIA,
+    PNEUMOLOGIA,
+    OFTALMOLOGIA,
     GINECOLOGIA,
-    DERMATOLOGIA
+    ORTOPEDIA,
+    PEDIATRIA,
+    NEFROLOGIA,
+    ENDOCRINOLOGIA,
+    NEUROLOGIA
 }

@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MedicoController {
 
     @PostMapping
+    // corpo da requisição
     public void cadastrar (@RequestBody DadosCadastroMedico dados) {
         System.out.println(dados);
     }
