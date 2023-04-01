@@ -27,4 +27,8 @@ public class Endereco {
         this.numero = dados.numero();
         this.complemento = dados.complemento();
     }
+
+    public String getEstado() {
+        return uf;
+    }
 }

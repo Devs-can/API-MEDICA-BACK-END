@@ -35,4 +35,7 @@ public class Paciente {
         this.endereco = new Endereco(dado.endereco());
     }
 
+    public String getRg() {
+        return null;
+    }
 }
