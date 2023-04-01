@@ -38,5 +38,49 @@ public class Medico {
         this.sala = dados.sala();
         this.endereco = new Endereco(dados.endereco());
     }
+
+    public Medico(DadosListagemMedicos dados) {
+        this.nome = dados.nome();
+        this.email = dados.email();
+        this.crm = dados.crm();
+        this.especialidade = dados.especialidade();
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public String getCrm() {
+        return crm;
+    }
+
+    public Especialidade getEspecialidade() {
+        return especialidade;
+    }
+
+    public Consultorio getConsultorio() {
+        return consultorio;
+    }
+
+    public Sala getSala() {
+        return sala;
+    }
 }
 
