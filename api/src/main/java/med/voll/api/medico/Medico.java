@@ -9,6 +9,7 @@ import med.voll.api.endereco.Endereco;
 @Entity(name = "Medico")
 @AllArgsConstructor
 @NoArgsConstructor
+
 public class Medico {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
