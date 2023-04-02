@@ -82,5 +82,19 @@ public class Medico {
     public Sala getSala() {
         return sala;
     }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void atualizar(DadosCadastroMedico dados) {
+        this.nome = dados.nome();
+        this.email = dados.email();
+        this.telefone = dados.telefone();
+        this.crm = dados.crm();
+        this.especialidade = dados.especialidade();
+        this.consultorio = dados.consultorio();
+        this.sala = dados.sala();
+    }
 }
 

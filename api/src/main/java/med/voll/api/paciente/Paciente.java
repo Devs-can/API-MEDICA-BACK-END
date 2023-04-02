@@ -35,7 +35,11 @@ public class Paciente {
         this.endereco = new Endereco(dado.endereco());
     }
 
-    public String getRg() {
-        return null;
+    public void atualizar(DadosCadastroPaciente dados) {
+        this.nome = dados.nome();
+        this.email = dados.email();
+        this.telefone = dados.telefone();
+        this.cpf = dados.cpf();
+        this.endereco = new Endereco(dados.endereco());
     }
 }
