@@ -1,9 +1,7 @@
 # 🏥 Voll Med 🏥
 
 Bem-vindo ao projeto de documentação da clínica médica fictícia, Voll Med.
-
 Neste projeto, criarei um aplicativo com algumas opções, onde você pode fazer o CRUD, tanto de médicos quanto de pacientes e o agendamento e cancelamento de consultas.
-
 Nesta documentação, abordarei as tecnologias a serem usadas, os objetivos a serem alcançados e as funcionalidades que farão parte deste aplicativo.
 
 ## 📊 Tecnologias 📊
@@ -41,6 +39,18 @@ Este aplicativo terá as seguintes funcionalidades:
 - Validações
 - Edição de médicos e pacientes
 - Exclusão de médicos e pacientes
+
+faz um swagger com essas rotas :
+## Rotas
+Requisição | Rota | Descrição 
+------------ | ------------- | -------------
+POST | /medicos | Cadastrar novo médico
+GET | /medicos | Obter lista de médicos
+|  |     |       | Resposta  |
+|--------|-----------------|------------------------|----------------------|
+| POST   | /pacientes      | Dados Cadastro Paciente| Paciente cadastrado  |
+| GET    | /pacientes      | Lista de Pacientes     | Lista de Pacientes   |
+| GET    | /pacientes/{id} | Paciente               | Paciente             |
 
 ## 🔧Começando 🔧
 
