@@ -37,14 +37,13 @@ public class PacienteController {
 
     @PutMapping("/{id}")
     @Transactional
-    public void atualizar(@PathVariable int id, @RequestBody DadosCadastroPaciente dados) {
-        pacienteRepository.findById((long) id)
+    public Paciente atualizar(@PathVariable int id, @RequestBody DadosCadastroPaciente dados) {
+        return pacienteRepository.findById((long) id)
                 .map(paciente -> {
                     paciente.atualizar(dados);
                     return paciente;
-
                 })
-                .orElseThrow(() -> new RuntimeException("Paciente não encontrado"));
+                .orElse(null);
     }
 
     @DeleteMapping("/{id}")
