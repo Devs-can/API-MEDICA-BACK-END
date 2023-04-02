@@ -1,6 +1,8 @@
 package med.voll.api.controller;
 
 import jakarta.validation.Valid;
+import med.voll.api.controller.Exception.MedicoNaoEncontradoException;
+import med.voll.api.controller.Exception.PacienteNaoEncontrado;
 import med.voll.api.paciente.DadosCadastroPaciente;
 import med.voll.api.paciente.Paciente;
 import med.voll.api.paciente.PacienteRepository;
@@ -43,14 +45,19 @@ public class PacienteController {
                     paciente.atualizar(dados);
                     return paciente;
                 })
-                .orElse(null);
+                .orElseThrow( () -> new PacienteNaoEncontrado("Paciente não encontrado"));
     }
+
 
     @DeleteMapping("/{id}")
     @Transactional
-    public void remover(@PathVariable int id) {
-        pacienteRepository.findById((long) id)
-                .ifPresent(paciente -> pacienteRepository.delete(paciente));
+    public Paciente remover(@PathVariable int id) {
+        return pacienteRepository.findById((long) id)
+                .map(paciente -> {
+                    pacienteRepository.delete(paciente);
+                    return paciente;
+                })
+                .orElseThrow( () -> new PacienteNaoEncontrado("Paciente não encontrado"));
     }
 
 
