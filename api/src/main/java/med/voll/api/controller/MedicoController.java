@@ -39,9 +39,9 @@ private MedicoRepository repository;
     @Transactional
     public Medico atualizar(@PathVariable Long id, @RequestBody DadosCadastroMedico dados) {
         return repository.findById(id)
-                .map(medicos -> {
-                    medicos.atualizar(dados);
-                    return medicos;
+                .map(medico -> {
+                    medico.atualizar(dados);
+                    return medico;
                 })
                 .orElseThrow(MedicoNaoEncontradoException::new);
     }
