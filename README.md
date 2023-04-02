@@ -40,17 +40,26 @@ Este aplicativo terá as seguintes funcionalidades:
 - Edição de médicos e pacientes
 - Exclusão de médicos e pacientes
 
-faz um swagger com essas rotas :
 ## Rotas
-Requisição | Rota | Descrição 
------------- | ------------- | -------------
-POST | /medicos | Cadastrar novo médico
-GET | /medicos | Obter lista de médicos
-|  |     |       | Resposta  |
-|--------|-----------------|------------------------|----------------------|
-| POST   | /pacientes      | Dados Cadastro Paciente| Paciente cadastrado  |
-| GET    | /pacientes      | Lista de Pacientes     | Lista de Pacientes   |
-| GET    | /pacientes/{id} | Paciente               | Paciente             |
+### Médico
+| Rota               | Método  | Descrição                                                                                                                      |
+|--------------------|---------|---------------------------------------------------------------------------------------------------------------------------------|
+| /medicos           | POST    | Cadastra um novo médico                                                                                                      |
+| /medicos           | GET     | Retorna todos os médicos cadastrados                                                                                         |
+| /medicos/{id}      | GET     | Retorna um médico especifico                                                                                                  |
+| /medicos/{id}      | PUT     | Atualiza os dados do médico especificado                                                                                     |
+| /medicos/{id}      | DELETE  | Remove o médico especificado    
+
+### Paciente
+
+| Rota        | Método  | Descrição                                               |
+|-------------|---------|---------------------------------------------------------|
+| /pacientes            | POST    | Cadastrar paciente                                      |
+| /pacientes            | GET     | Listar pacientes                                        |
+| /pacientes /{id}       | GET     | Buscar paciente por id                                  |
+| /pacientes /{id}       | PUT     | Atualizar dados do paciente                             |
+| /pacientes /{id}       | DELETE  | Remover paciente                                        |
+
 
 ## 🔧Começando 🔧
 
