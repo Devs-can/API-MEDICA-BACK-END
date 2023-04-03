@@ -1,7 +1,7 @@
-# 🏥 Voll Med 🏥
+# 🏥  PaciMed 🏥
 
-Bem-vindo ao projeto de documentação da clínica médica fictícia, Voll Med.
-Neste projeto, criarei um aplicativo com algumas opções, onde você pode fazer o CRUD, tanto de médicos quanto de pacientes e o agendamento e cancelamento de consultas.
+Bem-vindo ao projeto de documentação da clínica médica fictícia, PaciMed.
+Neste projeto, criarei um aplicativo com algumas opções, onde você pode fazer o CRUD, tanto de médicos quanto de pacientes.
 Nesta documentação, abordarei as tecnologias a serem usadas, os objetivos a serem alcançados e as funcionalidades que farão parte deste aplicativo.
 
 ## 📊 Tecnologias 📊
@@ -54,8 +54,8 @@ Este aplicativo terá as seguintes funcionalidades:
 
 | Rota        | Método  | Descrição                                               |
 |-------------|---------|---------------------------------------------------------|
-| /pacientes            | POST    | Cadastrar paciente                                      |
-| /pacientes            | GET     | Listar pacientes                                        |
+| /pacientes             | POST    | Cadastrar paciente                                      |
+| /pacientes             | GET     | Listar pacientes                                        |
 | /pacientes /{id}       | GET     | Buscar paciente por id                                  |
 | /pacientes /{id}       | PUT     | Atualizar dados do paciente                             |
 | /pacientes /{id}       | DELETE  | Remover paciente                                        |
