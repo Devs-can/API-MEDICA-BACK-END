@@ -1,12 +1,10 @@
-package med.voll.api.paciente;
+package pacimed.api.paciente;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import med.voll.api.endereco.Endereco;
+import pacimed.api.endereco.Endereco;
 
 import lombok.Getter;
-import org.hibernate.Hibernate;
-import java.util.Objects;
 
 @Getter
 @Entity(name = "Paciente")

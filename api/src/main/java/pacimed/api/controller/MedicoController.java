@@ -1,18 +1,16 @@
-package med.voll.api.controller;
+package pacimed.api.controller;
 
 import jakarta.validation.Valid;
-import med.voll.api.controller.Exception.MedicoNaoEncontradoException;
-import med.voll.api.medico.DadosCadastroMedico;
-import med.voll.api.medico.DadosListagemMedicos;
-import med.voll.api.medico.Medico;
-import med.voll.api.medico.MedicoRepository;
+import pacimed.api.controller.Exception.MedicoNaoEncontradoException;
+import pacimed.api.medico.DadosCadastroMedico;
+import pacimed.api.medico.DadosListagemMedicos;
+import pacimed.api.medico.Medico;
+import pacimed.api.medico.MedicoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 
 @RestController

@@ -1,4 +1,4 @@
-package med.voll.api.controller.Exception;
+package pacimed.api.controller.Exception;
 
 public class MedicoNaoEncontradoException extends RuntimeException
 {

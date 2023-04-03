@@ -1,9 +1,9 @@
-package med.voll.api.medico;
+package pacimed.api.medico;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import med.voll.api.endereco.Endereco;
+import pacimed.api.endereco.Endereco;
 
 
 @Entity(name = "Medico")

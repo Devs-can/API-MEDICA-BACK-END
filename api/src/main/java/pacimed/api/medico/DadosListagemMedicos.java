@@ -1,4 +1,4 @@
-package med.voll.api.medico;
+package pacimed.api.medico;
 
 public record DadosListagemMedicos(Long id, String nome, String email, String telefone, String crm, Especialidade especialidade, Consultorio consultorio, Sala sala) {
 

@@ -1,4 +1,4 @@
-package med.voll.api.medico;
+package pacimed.api.medico;
 
 public record DadosAtualizaMedico(
         String nome,
