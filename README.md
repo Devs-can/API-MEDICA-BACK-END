@@ -1,3 +1,11 @@
+# Sobre o projeto
+
+A gestão de uma clínica médica pode ser uma tarefa complexa, com a necessidade de gerenciar informações de pacientes, médicos e agendamentos de consultas. Nesse sentido, criei o projeto Clínica Médica Java- PACIMED Essa API permite o cadastro de pacientes e médicos, bem como a realização de operações CRUD em um banco de dados MySQL, oferecendo uma solução completa e eficiente para a gestão de informações médicas.
+O projeto Clínica Médica Java,consiste em uma API REST denominada PACIMED. Esta API é responsável por cadastrar médicos e pacientes, além de permitir a realização de operações CRUD (Create, Read, Update and Delete) em um banco de dados MySQL.
+A API PACIMED foi desenvolvida utilizando o framework Spring Boot, que é uma ferramenta amplamente utilizada no desenvolvimento de aplicações Java. Este framework permite que os desenvolvedores possam criar aplicações mais rapidamente, já que ele possui diversas funcionalidades pré-configuradas que podem ser utilizadas sem a necessidade de uma configuração mais complexa.
+Com a API PACIMED, é possível cadastrar informações pessoais e profissionais de médicos e pacientes, tais como nome completo, endereço, telefone, e-mail, número do registro profissional, especialidade médica, dentre outras. 
+
+
 # 🏥  PaciMed 🏥
 
 Bem-vindo ao projeto de documentação da clínica médica fictícia, PaciMed.
