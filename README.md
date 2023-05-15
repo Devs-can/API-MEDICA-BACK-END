@@ -12,6 +12,9 @@ Bem-vindo ao projeto de documentação da clínica médica fictícia, PaciMed.
 Neste projeto, criarei um aplicativo com algumas opções, onde você pode fazer o CRUD, tanto de médicos quanto de pacientes.
 Nesta documentação, abordarei as tecnologias a serem usadas, os objetivos a serem alcançados e as funcionalidades que farão parte deste aplicativo.
 
+![image](https://github.com/Devs-can/API-MEDICA-BACK-END/assets/91226847/be06cd54-9402-43db-b43a-1fb3f539eb1c)
+
+
 ## 📊 Tecnologias 📊
 
 Neste projeto serão utilizadas as seguintes tecnologias:
